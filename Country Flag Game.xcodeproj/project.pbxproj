@@ -14,6 +14,7 @@
 		CA3C5FB22B4EEF4A00E1E2DE /* Country_Flag_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FB12B4EEF4A00E1E2DE /* Country_Flag_GameTests.swift */; };
 		CA3C5FBC2B4EEF4A00E1E2DE /* Country_Flag_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FBB2B4EEF4A00E1E2DE /* Country_Flag_GameUITests.swift */; };
 		CA3C5FBE2B4EEF4A00E1E2DE /* Country_Flag_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FBD2B4EEF4A00E1E2DE /* Country_Flag_GameUITestsLaunchTests.swift */; };
+		CA3C5FCF2B4EF12C00E1E2DE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FCE2B4EF12C00E1E2DE /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CA3C5FB72B4EEF4A00E1E2DE /* Country Flag GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Country Flag GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3C5FBB2B4EEF4A00E1E2DE /* Country_Flag_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_Flag_GameUITests.swift; sourceTree = "<group>"; };
 		CA3C5FBD2B4EEF4A00E1E2DE /* Country_Flag_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_Flag_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA3C5FCE2B4EF12C00E1E2DE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				CA3C5F9F2B4EEF4800E1E2DE /* Country_Flag_GameApp.swift */,
-				CA3C5FA12B4EEF4800E1E2DE /* ContentView.swift */,
+				CA3C5FCA2B4EF04000E1E2DE /* Views */,
+				CA3C5FCC2B4EF07A00E1E2DE /* Components */,
+				CA3C5FCD2B4EF09100E1E2DE /* Models */,
 				CA3C5FA32B4EEF4A00E1E2DE /* Assets.xcassets */,
 				CA3C5FA52B4EEF4A00E1E2DE /* Country_Flag_Game.entitlements */,
 				CA3C5FA62B4EEF4A00E1E2DE /* Preview Content */,
@@ -127,6 +131,29 @@
 				CA3C5FBD2B4EEF4A00E1E2DE /* Country_Flag_GameUITestsLaunchTests.swift */,
 			);
 			path = "Country Flag GameUITests";
+			sourceTree = "<group>";
+		};
+		CA3C5FCA2B4EF04000E1E2DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5FA12B4EEF4800E1E2DE /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA3C5FCC2B4EF07A00E1E2DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CA3C5FCD2B4EF09100E1E2DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C5FCE2B4EF12C00E1E2DE /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3C5FCF2B4EF12C00E1E2DE /* Question.swift in Sources */,
 				CA3C5FA22B4EEF4800E1E2DE /* ContentView.swift in Sources */,
 				CA3C5FA02B4EEF4800E1E2DE /* Country_Flag_GameApp.swift in Sources */,
 			);
