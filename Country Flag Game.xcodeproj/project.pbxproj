@@ -19,6 +19,8 @@
 		CA3C5FD32B4EF2AF00E1E2DE /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FD22B4EF2AF00E1E2DE /* ProgressBar.swift */; };
 		CA3C5FD52B503F3100E1E2DE /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FD42B503F3100E1E2DE /* AnswerRow.swift */; };
 		CA3C5FD72B50415800E1E2DE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FD62B50415800E1E2DE /* QuestionView.swift */; };
+		CA3C5FD92B5045A000E1E2DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FD82B5045A000E1E2DE /* Data.swift */; };
+		CA3C5FDB2B582B7400E1E2DE /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5FDA2B582B7400E1E2DE /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CA3C5FD22B4EF2AF00E1E2DE /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		CA3C5FD42B503F3100E1E2DE /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		CA3C5FD62B50415800E1E2DE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		CA3C5FD82B5045A000E1E2DE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CA3C5FDA2B582B7400E1E2DE /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				CA3C5FCE2B4EF12C00E1E2DE /* Question.swift */,
+				CA3C5FD82B5045A000E1E2DE /* Data.swift */,
+				CA3C5FDA2B582B7400E1E2DE /* GameManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,12 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3C5FD12B4EF21700E1E2DE /* CustomButton.swift in Sources */,
+				CA3C5FDB2B582B7400E1E2DE /* GameManager.swift in Sources */,
 				CA3C5FCF2B4EF12C00E1E2DE /* Question.swift in Sources */,
 				CA3C5FA22B4EEF4800E1E2DE /* ContentView.swift in Sources */,
 				CA3C5FD72B50415800E1E2DE /* QuestionView.swift in Sources */,
 				CA3C5FD32B4EF2AF00E1E2DE /* ProgressBar.swift in Sources */,
 				CA3C5FD52B503F3100E1E2DE /* AnswerRow.swift in Sources */,
 				CA3C5FA02B4EEF4800E1E2DE /* Country_Flag_GameApp.swift in Sources */,
+				CA3C5FD92B5045A000E1E2DE /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

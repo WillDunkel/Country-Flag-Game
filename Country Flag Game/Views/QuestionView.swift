@@ -17,7 +17,7 @@ struct QuestionView: View {
                 Spacer()
                 Text("1 out of 3")
                     .foregroundColor(.yellow)
-            }
+            } 
             ProgressBar(progress: 50)
             VStack (spacing: 10) {
                 Text ("Which country's flag is this?")
