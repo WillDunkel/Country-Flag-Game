@@ -10,6 +10,7 @@ import SwiftUI
 struct AnswerRow: View {
     var answer: Answer
     @State private var isSelected = false
+    @EnvironmentObject var gameManager: GameManager
     var body: some View {
         HStack (spacing: 20) {
             Image (systemName: "circle.fill")
@@ -28,15 +29,19 @@ struct AnswerRow: View {
         
         .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
-            isSelected = true
+            if !gameManager.answerSelected {
+                isSelected = true
+                gameManager.selectAnswer(answer: answer)
+            }
         }
     }
 }
-    struct AnswerRow_Previews: PreviewProvider {
-        static var previews: some View {
-            AnswerRow(answer: Answer(text: "Test", isCorrect: true))
-        }
-    }
 
-    
-            
+struct AnswerRow_Previews: PreviewProvider {
+    static var previews: some View {
+        AnswerRow(answer: Answer(text: "Test", isCorrect: true))
+    }
+}
+
+
+
