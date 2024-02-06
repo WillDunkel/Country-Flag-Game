@@ -11,7 +11,7 @@ struct CustomButton: View {
     var text: String
     var background:  Color = .yellow
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Next")
             .foregroundColor(.cyan)
             .padding()
             .padding(.horizontal)

@@ -25,7 +25,7 @@ struct QuestionView: View {
                     Text ("Which country's flag is this?")
                     Image (gameManager.country)
                         .resizable ()
-                        . frame (width: 300, height: 200)
+                        .frame (width: 300, height: 200)
                     ForEach(gameManager.answerChoices){ answer in
                         AnswerRow(answer: answer)
                             .environmentObject(gameManager)
@@ -42,10 +42,10 @@ struct QuestionView: View {
             .padding()
             .background(.cyan)
         }
-        else{
+        else {
             VStack(spacing: 20, content: {
                 Text ("Country Flag Game")
-                    .font (.title)
+                    .font(.title)
                 Text ("Congratulations! You have completed the game.")
                 Text ("You scored \(gameManager.score) out of \(gameManager.questions.count)")
                 Button {
@@ -61,6 +61,7 @@ struct QuestionView: View {
         }
     }
 }
+
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()

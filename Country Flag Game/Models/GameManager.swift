@@ -32,8 +32,6 @@ class GameManager: ObservableObject {
         goToNextQuestion()
     }
     
-    
-    
     func loadQuestions() {
         let countries = Data().countries
         if countries.count < 4 {
@@ -48,22 +46,23 @@ class GameManager: ObservableObject {
                         if let randomCountry = countries.randomElement () {
                             if randomCountry != country && !incorrectAnswer.contains (randomCountry) {
                                 incorrectAnswer.append(randomCountry)
-                                questions.append(Question(correctAnswer: Answer (text: country, isCorrect: true),
-                                                          incorrectAnswers: [
-                                                            Answer(text: incorrectAnswer [0], isCorrect: false),
-                                                            Answer(text: incorrectAnswer[1], isCorrect: false),
-                                                            Answer(text: incorrectAnswer[2], isCorrect: false)
-                                                          ]))
-                            }
-                            else {
-                                print("\(country) image cannot be found")
                             }
                         }
                     }
+                    questions.append(Question(correctAnswer: Answer (text: country, isCorrect: true),
+                                              incorrectAnswers: [
+                                                Answer(text: incorrectAnswer[0], isCorrect: false),
+                                                Answer(text: incorrectAnswer[1], isCorrect: false),
+                                                Answer(text: incorrectAnswer[2], isCorrect: false)
+                                              ]))
+                }
+                else {
+                    print("\(country) image cannot be found")
                 }
             }
         }
     }
+    
     
     func goToNextQuestion() {
         if index < questions.count {
