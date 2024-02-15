@@ -28,6 +28,12 @@ struct Data {
             "Spain",
             "Sweden",
             "Ukraine",
-            "United States"
+            "United States",
+            // 5 extra countries
+            "Canada",
+            "Denmark",
+            "Japan",
+            "Argentina",
+            "Bangladesh"
         ]
 }
