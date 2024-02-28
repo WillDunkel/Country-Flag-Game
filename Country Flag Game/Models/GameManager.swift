@@ -51,7 +51,7 @@ class GameManager: ObservableObject {
                     }
                     questions.append(Question(correctAnswer: Answer (text: country, isCorrect: true),
                                               incorrectAnswers: [
-                                                Answer(text: incorrectAnswer [0], isCorrect: false),
+                                                Answer(text: incorrectAnswer[0], isCorrect: false),
                                                 Answer(text: incorrectAnswer[1], isCorrect: false),
                                                 Answer(text: incorrectAnswer[2], isCorrect: false)
                                               ]))
@@ -62,6 +62,7 @@ class GameManager: ObservableObject {
             }
         }
     }
+    
     
     func goToNextQuestion() {
         if index < questions.count {

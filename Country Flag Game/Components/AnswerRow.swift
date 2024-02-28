@@ -23,10 +23,10 @@ struct AnswerRow: View {
                     .foregroundColor(answer.isCorrect ? .green : .red)
             }
         }
-        .padding() .frame (width: 300, alignment: .leading)
+        .padding()
+        .frame(width: 300, alignment: .leading)
         .background(.white)
         .cornerRadius(10)
-        
         .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
             if !gameManager.answerSelected {
